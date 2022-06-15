@@ -37,6 +37,7 @@ hr {
 .container {
   max-width: 1400px;
   margin: 0 auto;
+  padding: 0px 30px;
 }
 
 .p10 {
@@ -417,7 +418,7 @@ hr {
   text-align: left;
   max-width: 500px;
   padding: 40px;
-  margin: 40px;
+  margin: 20px;
 }
 
 .chapter__description > .flex {
@@ -571,6 +572,9 @@ a.block__title {
 
 .articles .flex {
   align-items: flex-start;
+  flex: 0 1 50;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .articles__row {
@@ -580,7 +584,7 @@ a.block__title {
 .article {
   background: #ffffff;
   margin-right: 20px;
-  max-width: 600px;
+  max-width: 400px;
   max-height: 800px;
 }
 
@@ -732,4 +736,152 @@ a.block__title {
 
 .TA-C {
   text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .row__2 {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .header__menu, .demo, .btn {
+    display: none;
+  }
+  .header__img > img {
+    max-width: 300px;
+  }
+  .flex,
+  .flex__row,
+  .row__4,
+  .row__2,
+  .trusted__row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .reader__row {
+    flex-wrap: nowrap;
+  }
+  .header__title {
+    text-align: center;
+  }
+  .book {
+    margin: 30px 0px 0px 0px;
+  }
+  .circle {
+    width: 10px;
+    height: 10px;
+  }
+  .semi-circle {
+    width: 4px;
+    height: 9px;
+  }
+  .reader__item .semi-circle {
+    margin-left: 2px;
+    width: 4px;
+    height: 8px;
+    margin-bottom: -1.7px;
+  }
+  .footer__content, .input__content {
+    padding: 50px;
+  }
+  .footer__title, .footer__img {
+    text-align: center;
+  }
+  .footer__menu, .footer__info {
+    margin: 60px 0px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .container {
+    padding: 0px;
+  }
+  .reader__row.flex__row {
+    flex-direction: column;
+  }
+  .reader__card {
+    max-width: 292px;
+  }
+  .input__content {
+    margin: 100px 0px;
+  }
+  .chapter__button {
+    width: 250px;
+  }
+  .book {
+    text-align: center;
+  }
+  .book__content {
+    margin-left: 0px;
+  }
+  .get__book__img {
+    margin-top: 40px;
+  }
+  .input__button {
+    margin: 40px 0px 0px 0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  img {
+    max-width: 400px;
+  }
+  .border {
+    display: none;
+  }
+  .author__img {
+    position: relative;
+  }
+  .about__content {
+    margin-left: 0px;
+  }
+  .footer .footer__content {
+    padding: 0px;
+  }
+  .footer__img {
+    margin: 30px 0px 0px 0px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .description__item {
+    margin-right: 50px;
+  }
+  .input__button {
+    width: 150px;
+  }
+  .footer__title {
+    margin: 20px 0px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    padding: 0px;
+  }
+  .author__img, .get__book__img > img {
+    max-width: 200px;
+  }
+  .will__learn > .flex__row {
+    flex-direction: column;
+  }
+  .reader__card {
+    margin: 20px 0px;
+  }
+  .input__input {
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .description__item {
+    margin-right: 10px;
+  }
+  .input__input, .input__button {
+    height: 30px;
+  }
+  .footer__menu, .footer__info {
+    margin: 0px;
+  }
 }
