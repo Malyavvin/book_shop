@@ -1,3 +1,4 @@
+@import url("src\fonts\fonts.sass");
 * {
   margin: 0px;
 }
@@ -776,6 +777,10 @@ a.block__title {
   .footer__menu, .footer__info {
     margin: 60px 0px;
   }
+
+  .article .readmore {
+    padding-right: 30px;
+  }
 }
 @media screen and (max-width: 860px) {
   .container {
@@ -884,5 +889,38 @@ a.block__title {
 
   .footer__menu, .footer__info {
     margin: 0px;
+  }
+
+  .author__qr > img {
+    max-width: 50px;
+  }
+
+  .basket {
+    margin: 30px 0px;
+  }
+
+  .input__text {
+    margin: 20px;
+  }
+
+  .input__input {
+    margin: 20px 0px 0px 0px;
+  }
+
+  .article {
+    text-align: center;
+  }
+
+  .article .article__img > img, .book__img > img {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .header__img > img {
+    max-width: 200px;
+  }
+
+  .chapter__button {
+    width: 150px;
   }
 }
