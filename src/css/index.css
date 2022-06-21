@@ -212,7 +212,6 @@ hr {
 
 .book__img {
   max-height: 382px;
-  max-width: 285px;
 }
 
 .book__content {
@@ -739,7 +738,7 @@ a.block__title {
   text-align: center;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
   .row__2 {
     justify-content: center;
   }
@@ -795,6 +794,10 @@ a.block__title {
   .article .readmore {
     padding-right: 30px;
   }
+  .about__descriptions {
+    margin: 20px 0px;
+    justify-content: space-around;
+  }
 }
 
 @media screen and (max-width: 860px) {
@@ -826,6 +829,21 @@ a.block__title {
     margin: 40px 0px 0px 0px;
   }
   .article {
+    margin: 20px 0px 0px 0px;
+  }
+  .books__content {
+    margin-top: 0px;
+  }
+  .books {
+    margin: 100px 0px;
+  }
+  .about {
+    margin: 100px 0px;
+  }
+  .book__content {
+    margin-top: 40px;
+  }
+  .about__content {
     margin: 20px 0px 0px 0px;
   }
 }
@@ -910,7 +928,7 @@ a.block__title {
   .article {
     text-align: center;
   }
-  .article .article__img > img, .book__img > img {
+  .article .article__img > img {
     width: 200px;
   }
   .article .article__title {
